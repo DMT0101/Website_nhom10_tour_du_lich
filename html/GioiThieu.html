@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Du lịch Việt</title>
+    <!-- ----------------- Favicon ----------------- -->
+    <link rel="shortcut icon" href="../assets/img/icon/favicon.png" type="image/x-icon">
+    <!-- ----------------- Bootstrap 5 ----------------- -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <!-- ----------------- Bootstrap Icon ----------------- -->
+    <link rel="stylesheet" href="../assets/icon/bootstrap-icons.css">
+    <!-- ----------------- Fonts ----------------- -->
+    <link rel="stylesheet" href="../assets/font/stylesheet.css">
+    <!-- ----------------- Style ----------------- -->
+    <!-- <link rel="stylesheet" href="../assets/css/index.css"> -->
+    <link rel="stylesheet" href="../assets/css/GioiThieu.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- ========================== HEADER ========================== -->
+        <header id="wrapper_header">
+            <div class="position-relative">
+                <!-- ---------------------- NAVBAR ---------------------- -->
+                <nav class="navbar navbar-expand-lg bg-dark">
+                    <div class="container-lg container-fluid">
+                        <a class="navbar-brand font_DPTBlacksword mx-lg-3 mx-0 text-white fs-4 p-0" href="/">Du lịch
+                            Việt</a>
+                        <div id="navmenu" class="collapse navbar-collapse justify-content-around">
+                            <ul class="navbar-nav text-uppercase fw-bold">
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link" href="/">Trang chủ</a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link" href="./GioiThieu.html">Giới thiệu</a>
+                                </li>
+                                <li class="nav-item mx-2 dropdown">
+                                    <a class="nav-link dropdown-toggle" role="button" data-bs-auto-close="outside"
+                                        data-bs-toggle="dropdown" href="/">Tour</a>
+                                    <ul class="dropdown-menu text-capitalize">
+                                        <li class="dropend">
+                                            <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                                href="/">Trong nước</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="./TourTrongNuoc.html?type=MienBac">Miền Bắc</a></li>
+                                                <li><a class="dropdown-item" href="./TourTrongNuoc.html?type=MienTrung">Miền Trung</a></li>
+                                                <li><a class="dropdown-item" href="./TourTrongNuoc.html?type=MienNam">Miền Nam</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="./TourNuocNgoai.html">Quốc tế</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link" href="./Blog.html">Blog</a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link" href="./LienHe.html">Liên hệ</a>
+                                </li>
+                            </ul>
+                            <a id="btn_dangnhap" class="btn btn-info text-white fw-bold my-4 my-lg-0"
+                                href="./DangNhap.html">Đăng nhập</a>
+                            <a id="user_name" class="text-white" href="./TaiKhoan.html"></a>
+                        </div>
+                        <button class="navbar-toggler bg-info" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navmenu">
+                            <label class="hamburger">
+                                <input type="checkbox" />
+                                <svg viewBox="0 0 32 32">
+                                    <path class="line line-top-bottom"
+                                        d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                                    </path>
+                                    <path class="line" d="M7 16 27 16"></path>
+                                </svg>
+                            </label>
+                        </button>
+                    </div>
+                </nav>
+                <!-- ---------------------- NAVBAR ---------------------- -->
+            </div>
+        </header>
+        <!-- ========================== HEADER ========================== -->
+        <!-- ===================== CONTENT ===================== -->
+        <main class="content">
+            <div class="container">
+                <section class="py-5 container row">
+                    <h3 class="text-center font_DPTBlacksword text-info fs-1 pb-3">Giới thiệu</h3>
+                    <div class="col-12 col-md-3 mb-4">
+                        <div></div>
+                        <div class="sticky">
+                            <div class="shadow-lg p-2 title_booking link_a row">
+                                <h4>Nội dung </h4>
+                                <ul class="">
+                                    <li class="my-2"><a href="#nd01" id="chung_toi ">1.VỀ CHÚNG TÔI </a></li>
+                                    <li class="my-2"><a href="#nd02">2.MỤC TIÊU & SỨ MỆNH </a></li>
+                                    <li class="my-2"><a href="#nd03">3.TẠI SAO NÊN CHỌN TRẢI NGHIỆM TẠI DU LỊCH VIỆT
+                                        </a></li>
+                                    <li class="my-2"><a href="#nd04">4.THÀNH VIÊN </a></li>
+                                </ul>
+                            </div>
+                            <!-- <div class="row d-none d-sm-block mt-4">
+                                <div style="font-size: 12px;">
+                                    <h4>Tour nổi bật </h4>
+                                    <div id="them" style="overflow-y: auto;  height: calc(100vh - 230px);">
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div class="row">
+                            <div class="col-12 link_a">
+                                <h4 id="nd01"> Công ty TNHH Du lịch Việt</h4>
+                                <p><b>Công ty TNHH Du lịch Việt</b> được thành lập năm 2014 với tên gọi <b>Du lịch
+                                        Việt</b> .Sau nhiều năm hình
+                                    thành và phát
+                                    triển, <b>Du lịch Việt</b> không ngừng nghiên cứu và luôn là đơn vị luôn ứng
+                                    dụng công nghệ hiện đại kết hợp với
+                                    dịch
+                                    vụ. Chúng tôi luôn ưu tiên cung cấp những ý tưởng du lịch độc đáo và sáng tạo
+                                    nhằm đem lại trải nghiệm du lịch
+                                    tốt nhất cho du khách.
+                                </p>
+                                <p><b>Công ty TNHH Du lịch Việt</b> đặt trụ sở tại TPHCM tại <b> <i>Số 12 Nguyễn Văn
+                                            Bảo, Phường 4, Quận Gò Vấp, Thành phố Hồ Chí
+                                            Minh</i> </b>. Đặc biệt, chúng tôi áp dụng công nghệ mới trong giao dịch
+                                    online qua hệ thống website: <a href="#"> <b>dulichviet.com</b></a> và Tư vấn
+                                    24/7: <a href="tel:+0686.868.686"><b>0686.868.686</b></a></p>
+                                <div class="">
+                                    <img src="../assets/img/GioiThieu/nv.png" class="img-fluid " alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-12 ">
+                                <h4 id="nd02">MỤC TIÊU & SỨ MỆNH</h4>
+                                <p>Lấy niềm tin của khách hàng là phương châm và thước đo chất lượng dịch vụ, <b>Du
+                                        lịch Việt</b> luôn mong muốn thương hiệu
+                                    của mình được gắn với uy tín và chất lượng. Ngày nay, khi thị trường luôn liên
+                                    tục thay đổi, chúng tôi càng xác định
+                                    rõ ràng mục tiêu và sứ mệnh của mình hơn:</p>
+                            </div>
+                        </div>
+                        <div class="px-5 ">
+                            <div class="col-12  mt-2 ">
+                                <div class="shadow-lg rounded-4 p-3">
+                                    <h5 class="text-decoration-underline">Đối với khách hàng và đối tác:</h5>
+                                    <ul>
+                                        <li>Xây dựng uy tín và thực hiện đúng mọi cam kết trước, trong và sau khi
+                                            tiến hành giao dịch giữa các bên.</li>
+                                        <li>Chuyên cung cấp, tư vấn dịch vụ chất lượng nhất cho khách hàng với mức
+                                            giá tốt nhất và phù hợp nhất</li>
+                                        <li>Thực hiện nghiệp vụ tư vấn bán hàng một cách nhanh chóng, hiệu quả nhất
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12   mt-5 ">
+                                <div class="shadow-lg p-3 rounded-4">
+                                    <h5 class="text-decoration-underline">Đối với xã hội:</h5>
+                                    <ul>
+                                        <li>Xây dựng văn hóa doanh nghiệp hiệu quả điển hình tại Việt Nam.</li>
+                                        <li id="nd03">Đóng góp tích cực vào các hoạt động hướng về cộng đồng, vì lợi
+                                            ích chung
+                                            của xã hội</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5 p-4 shadow-lg rounded background-image">
+                            <div class="row  " style="padding-bottom: 90px;">
+                                <div class="col-12 col-md-4  d-flex justify-content-center">
+                                    <h4 style="color: rgb(238, 7, 7); ">Tại sao nên chọn trải nghiệm tại <br> <b
+                                            class="font_DPTBlacksword">Du
+                                            Lịch Việt</b></h4>
+                                </div>
+                                <div class="col-12 col-md-7 text-overlay rounded-3 py-3" style="color: rgb(0, 0, 0); ">
+                                    <ul>
+                                        <li>Thương hiệu uy tín với 10 năm phát triển bền vững</li>
+                                        <li>Quy trình chuyên môn hóa, tiên phong áp dụng công nghệ tiên tiến</li>
+                                        <li>Mạng lưới phân phối rộng khắp, hỗ trợ nhanh chóng</li>
+                                        <li>Đội ngũ nhân sự trẻ và năng động, kinh nghiệm phục vụ thành công các
+                                            chương
+                                            trình lớn</li>
+                                        <li>Sản phẩm đa dạng, luôn có giải pháp tốt nhất đáp ứng mọi nhu cầu khách
+                                            hàng</li>
+                                        <li>Đội ngũ sự kiện luôn có ý tưởng đột phá và cập nhật xu hướng mới</li>
+                                        <li>Cam kết chất lượng, cảm xúc thăng hoa, gia tăng giá trị là tiêu chí phục
+                                            vụ
+                                            của chúng tôi</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class=" my-5">
+                            <h4 class=" " id="nd04">DANH SÁCH THÀNH VIÊN</h4>
+                            <div style="overflow-x:scroll;">
+                                <table class="table table-hover text-center">
+                                    <thead>
+                                        <tr>
+
+                                            <th>MSSV</th>
+                                            <th>Họ tên </th>
+                                            <th>Email</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>22683171</td>
+                                            <td>Phan Tôn Lộc Nguyên</td>
+                                            <td>phantonlocnguyen@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>22652921</td>
+                                            <td>Lê Mẫn Nghi</td>
+                                            <td>nghile030@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>22658841</td>
+                                            <td>Đỗ Minh Thư</td>
+                                            <td>minhthudo2512@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>22684961</td>
+                                            <td>Phan Nhật Quang</td>
+                                            <td>pnquangcn1704@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>22686331</td>
+                                            <td>Đặng Thái Bảo</td>
+                                            <td>dangthaibao14@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>22636591</td>
+                                            <td>Ngô Nhựt Huy</td>
+                                            <td>ngonhuthuy1234@gmail.com</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <!-- ========================== FOOTER ========================== -->
+        <footer id="wrapper_footer">
+            <div class="container pt-3">
+                <div class="row">
+                    <div class="col-12 col-md-6 p-2 col-lg-4">
+                        <p class="fs-4 text-uppercase fw-bold text-center">Hỗ trợ tư vấn</p>
+                        <p>
+                            <span class="fw-bold">
+                                <i class="bi bi-envelope-at-fill text-danger"></i> MAIL:
+                            </span>
+                            <a href="mailto:dungcobamdo@gmail.com">dungcobamdo@gmail.com</a>
+                        </p>
+
+                        <p>
+                            <span class="fw-bold">
+                                <i class="bi bi-telephone-fill text-primary"></i>TEL:
+                            </span>
+                            <a href="tel:+0686.868.686">0686.868.686</a>
+                        </p>
+
+                        <div class="gr_contact fs-4">
+                            <a class="mx-1 text-primary" href="#"><i class="bi bi-messenger"></i></a>
+                            <a class="mx-1 text-success" href="#"><i class="bi bi-whatsapp"></i></a>
+                            <a class="mx-1 text-danger" href="#"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 p-2 col-lg-4">
+                        <p class="fs-4 text-uppercase fw-bold text-center">Thông tin cần biết</p>
+                        <p><a href="#">Điều kiện, điều khoản</a></p>
+                        <p><a href="#">Phương thức thanh toán</a></p>
+                        <p><a href="#">Chính sách bảo mật</a></p>
+                        <p><a href="#">Quy định</a></p>
+                    </div>
+
+                    <div class="col-12 p-2 col-lg-4">
+                        <p class="fs-4 text-uppercase fw-bold text-center">Thông tin liên hệ</p>
+                        <h5 class="fs-5 text-center">Trường Đại học Công Nghiệp</h5>
+                        <p>
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span class="fw-bold text-uppercase">Địa chỉ:</span>
+                            <span>12 Nguyễn Văn Bảo, P.4, Q.Gò Vấp, TP.HCM</span>
+                        </p>
+                        <iframe class="w-100" height="300"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.858169091082!2d106.68427047570351!3d10.82216415834704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174deb3ef536f31%3A0x8b7bb8b7c956157b!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2hp4buHcCBUUC5IQ00!5e0!3m2!1svi!2s!4v1710929565391!5m2!1svi!2s"
+                            style="border: 0" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="row text-center pt-3 user-select-none">
+                    <p>©Copyright Thiết kế bởi Nhóm 10 :D</p>
+                </div>
+            </div>
+        </footer>
+        <!-- ========================== FOOTER ========================== -->
+    </div>
+    <!-- ========================== JAVASCRIPT ========================== -->
+    <script src="../assets/js/jquery-3.7.1.js"></script>
+    <script src="../assets/js/bootstrap.bundle.js"></script>
+    <script src="../assets/js/GioiThieu.js"></script>
+    <script src="../assets/js/KiemTraTK.js"></script>
+    <!-- ========================== JAVASCRIPT ========================== -->
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+{
+  "tours": [
+    {
+      "id": 1,
+      "title": "Đà Nẵng - Bà Nà - Huế - Hội An - Tour du lịch 4 ngày 3 đêm",
+      "time": "4N3Đ",
+      "date": "12/04/2024",
+      "location": "Đà Nẵng - Bà Nà - Huế - Hội An",
+      "price": "10000000 đ",
+      "img": "./img/phocohoian.webp"
+    },
+    {
+      "id": 2,
+      "title": "Phú Yên - Quy Nhơn - KDL Hầm Hô - Bảo Tàng Quang Trung (Bay Vietnam Airlines - Khách Sạn 4 sao) - Lễ 30/4",
+      "time": "4N3Đ",
+      "date": "12/04/2024",
+      "location": "Phú Yên - Quy Nhơn - KDL Hầm Hô - Bảo Tàng Quang Trung",
+      "price": "10000000 đ",
+      "img": "./img/muidailanh.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Hà Nội - Hạ Long - Yên Tử - Ninh Bình - Bái Đính - Tràng An (Khách sạn 4 sao)",
+      "time": "4N3Đ",
+      "date": "12/04/2024",
+      "location": "Hà Nội - Hạ Long - Yên Tử - Ninh Bình - Bái Đính - Tràng An",
+      "price": "10000000 đ",
+      "img": "./img/dongthiencung.jpg"
+    },
+    {
+      "id": 1,
+      "title": "Đà Nẵng - Bà Nà - Huế - Hội An - Tour du lịch 4 ngày 3 đêm",
+      "time": "4N3Đ",
+      "date": "12/04/2024",
+      "location": "Đà Nẵng - Bà Nà - Huế - Hội An",
+      "price": "10000000 đ",
+      "img": "./img/phocohoian.webp"
+    },
+    {
+      "id": 2,
+      "title": "Phú Yên - Quy Nhơn - KDL Hầm Hô - Bảo Tàng Quang Trung (Bay Vietnam Airlines - Khách Sạn 4 sao) - Lễ 30/4",
+      "time": "4N3Đ",
+      "date": "12/04/2024",
+      "location": "Phú Yên - Quy Nhơn - KDL Hầm Hô - Bảo Tàng Quang Trung",
+      "price": "10000000 đ",
+      "img": "./img/muidailanh.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Hà Nội - Hạ Long - Yên Tử - Ninh Bình - Bái Đính - Tràng An (Khách sạn 4 sao)",
+      "time": "4N3Đ",
+      "date": "12/04/2024",
+      "location": "Hà Nội - Hạ Long - Yên Tử - Ninh Bình - Bái Đính - Tràng An",
+      "price": "10000000 đ",
+      "img": "./img/dongthiencung.jpg"
+    },
+    {
+      "id": 1,
+      "title": "Đà Nẵng - Bà Nà - Huế - Hội An - Tour du lịch 4 ngày 3 đêm",
+      "time": "4N3Đ",
+      "date": "12/04/2024",
+      "location": "Đà Nẵng - Bà Nà - Huế - Hội An",
+      "price": "10000000 đ",
+      "img": "./img/phocohoian.webp"
+    },
+    {
+      "id": 2,
+      "title": "Phú Yên - Quy Nhơn - KDL Hầm Hô - Bảo Tàng Quang Trung (Bay Vietnam Airlines - Khách Sạn 4 sao) - Lễ 30/4",
+      "time": "4N3Đ",
+      "date": "12/04/2024",
+      "location": "Phú Yên - Quy Nhơn - KDL Hầm Hô - Bảo Tàng Quang Trung",
+      "price": "10000000 đ",
+      "img": "./img/muidailanh.jpg"
+    }
+  ]
+}

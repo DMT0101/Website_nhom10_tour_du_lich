@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Du lịch Việt</title>
+    <!-- ----------------- Favicon ----------------- -->
+    <link rel="shortcut icon" href="../assets/img/icon/favicon.png" type="image/x-icon">
+    <!-- ----------------- Bootstrap 5 ----------------- -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <!-- ----------------- Bootstrap Icon ----------------- -->
+    <link rel="stylesheet" href="../assets/icon/bootstrap-icons.css">
+    <!-- ----------------- Fonts ----------------- -->
+    <link rel="stylesheet" href="../assets/font/stylesheet.css">
+    <!-- ----------------- Style ----------------- -->
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/DatTour.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- ========================== HEADER ========================== -->
+        <header id="wrapper_header">
+            <div class="position-relative">
+                <!-- ---------------------- NAVBAR ---------------------- -->
+                <nav class="navbar navbar-expand-lg bg-dark">
+                    <div class="container-lg container-fluid">
+                        <a class="navbar-brand font_DPTBlacksword mx-lg-3 mx-0 text-white fs-4 p-0" href="/">Du lịch
+                            Việt</a>
+                        <div id="navmenu" class="collapse navbar-collapse justify-content-around">
+                            <ul class="navbar-nav text-uppercase fw-bold">
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link" href="/">Trang chủ</a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link" href="./GioiThieu.html">Giới thiệu</a>
+                                </li>
+                                <li class="nav-item mx-2 dropdown">
+                                    <a class="nav-link dropdown-toggle" role="button" data-bs-auto-close="outside"
+                                        data-bs-toggle="dropdown" href="/">Tour</a>
+                                    <ul class="dropdown-menu text-capitalize">
+                                        <li class="dropend">
+                                            <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                                href="/">Trong nước</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="./TourTrongNuoc.html?type=MienBac">Miền Bắc</a></li>
+                                                <li><a class="dropdown-item" href="./TourTrongNuoc.html?type=MienTrung">Miền Trung</a></li>
+                                                <li><a class="dropdown-item" href="./TourTrongNuoc.html?type=MienNam">Miền Nam</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="./TourNuocNgoai.html">Quốc tế</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link" href="./Blog.html">Blog</a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link" href="./LienHe.html">Liên hệ</a>
+                                </li>
+                            </ul>
+                            <a id="btn_dangnhap" class="btn btn-info text-white fw-bold my-4 my-lg-0"
+                                href="./DangNhap.html">Đăng nhập</a>
+                            <a id="user_name" class="text-white" href="./TaiKhoan.html"></a>
+                        </div>
+                        <button class="navbar-toggler bg-info" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navmenu">
+                            <label class="hamburger">
+                                <input type="checkbox" />
+                                <svg viewBox="0 0 32 32">
+                                    <path class="line line-top-bottom"
+                                        d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                                    </path>
+                                    <path class="line" d="M7 16 27 16"></path>
+                                </svg>
+                            </label>
+                        </button>
+                    </div>
+                </nav>
+                <!-- ---------------------- NAVBAR ---------------------- -->
+            </div>
+        </header>
+        <!-- ========================== HEADER ========================== -->
+        <!-- ===================== CONTENT ===================== -->
+        <main class="content">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-12 col-md-7 " >
+                        <div class="row shadow-lg rounded_boder m-3 " id="nd_tomtat">
+                        </div>
+                        <!-- tóm tắt tour  -->
+
+                        <!-- chi tiết đặt tour  -->
+                        <div class="row m-3 shadow-lg rounded_boder">
+                            <div class=' title_booking '>
+                                <h4 class="ps-4 pt-2">Chi tiết đặt tour </h4>
+                            </div>
+                            <div class="p-3">
+                                <div class="row">
+                                    <div class=" col-6 mb-3 ">
+                                        <label class="  mr-2">Người lớn</label>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn " id='btn_giam_gt'
+                                                onclick="changeValue('sl_nguoi_lon', -1);cap_nhat_gia('nguoi_lon');cap_nhat_tong_gia()">
+                                                <i class="bi bi-dash-circle"></i>
+                                            </button>
+                                            <span id="sl_nguoi_lon">1</span>
+                                            <button type="button" class="btn"
+                                                onclick="changeValue('sl_nguoi_lon', 1);cap_nhat_gia('nguoi_lon');cap_nhat_tong_gia()">
+                                                <i class="bi bi-plus-circle"></i>
+                                            </button>
+                                        </div>
+                                        <p class="text-danger text-sm ">(Từ 12 tuổi trở lên ) </p>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <label class=" mr-2">Trẻ em</label>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn "
+                                                onclick="changeValue('sl_tre_em', -1);cap_nhat_gia('tre_em');cap_nhat_tong_gia()">
+                                                <i class="bi bi-dash-circle"></i>
+                                            </button>
+                                            <span id="sl_tre_em">0</span>
+                                            <button type="button" class="btn"
+                                                onclick="changeValue('sl_tre_em', 1);cap_nhat_gia('tre_em');cap_nhat_tong_gia()">
+                                                <i class="bi bi-plus-circle"></i>
+                                            </button>
+                                        </div>
+                                        <p class="text-danger text-sm ">(Từ 5-11 tuổi) </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 mb-3">
+                                        <label class=" mr-2">Trẻ nhỏ</label>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn "
+                                                onclick="changeValue('sl_tre_nho', -1);cap_nhat_gia('tre_nho');cap_nhat_tong_gia()">
+                                                <i class="bi bi-dash-circle"></i>
+                                            </button>
+                                            <span id="sl_tre_nho">0</span>
+                                            <button type="button" class="btn"
+                                                onclick="changeValue('sl_tre_nho', 1);cap_nhat_gia('tre_nho');cap_nhat_tong_gia()">
+                                                <i class="bi bi-plus-circle"></i>
+                                            </button>
+                                        </div>
+                                        <p class="text-danger ">(Từ 2-4 tuổi) </p>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <label class=" mr-2">Em bé </label>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn "
+                                                onclick="changeValue('sl_em_be', -1);cap_nhat_gia('em_be');cap_nhat_tong_gia()">
+                                                <i class="bi bi-dash-circle"></i>
+                                            </button>
+                                            <span id="sl_em_be">0</span>
+                                            <button type="button" class="btn"
+                                                onclick="changeValue('sl_em_be', 1);cap_nhat_gia('em_be');cap_nhat_tong_gia()">
+                                                <i class="bi bi-plus-circle"></i>
+                                            </button>
+                                        </div>
+                                        <p class="text-danger ">(Dưới 2 tuổi ) </p>
+                                    </div>
+                                </div>
+                                <div class="Gia">
+                                    <div class=" row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="price18" class="">Đơn giá người lớn</label>
+                                            <div class="input-group ">
+                                                <span class="input-group-text" style="width: 115px;"
+                                                    id="don_nguoi_lon"></span>
+                                                <span class="input-group-text"><strong>VNĐ</strong></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="price18" class="">Giá người lớn</label>
+                                            <div class="input-group ">
+                                                <span class="input-group-text" style="width: 115px;"
+                                                    id="gia_nguoi_lon"></span>
+                                                <span class="input-group-text"><strong>VNĐ</strong></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="price181" class="">Đơn giá trẻ em</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text" style="width: 115px;"
+                                                    id="don_tre_em"></span>
+                                                <span class="input-group-text"><strong>VNĐ</strong></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="price181" class="">Giá trẻ em</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text" style="width: 115px;"
+                                                    id="gia_tre_em">0</span>
+                                                <span class="input-group-text"><strong>VNĐ</strong></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="price181" class="">Đơn giá trẻ nhỏ</label>
+                                            <div class="input-group">
+
+                                                <span class="input-group-text" style="width: 115px;"
+                                                    id="don_tre_nho"></span>
+                                                <span class="input-group-text"><strong>VNĐ</strong></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="price181" class="">Giá trẻ nhỏ</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text" style="width: 115px;"
+                                                    id="gia_tre_nho">0</span>
+                                                <span class="input-group-text"><strong>VNĐ</strong></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="price181" class="">Đơn giá em bé </label>
+                                            <div class="input-group">
+                                                <span class="input-group-text" style="width: 115px;"
+                                                    id="don_em_be"></span>
+                                                <span class="input-group-text"><strong>VNĐ</strong></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="price181" class="">Giá em bé</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text" style="width: 115px;"
+                                                    id="gia_em_be">0</span>
+                                                <span class="input-group-text"><strong>VNĐ</strong></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Thông tin người đặt  -->
+                    <div class="col-12 col-md-5">
+                        <div class="shadow-lg rounded_boder m-3">
+                            <div class=' title_booking01 '>
+                                <h4 class="text-white pt-2">Thông tin người đặt </h4>
+                            </div>
+                            <div class="p-3">
+                                <form action="" class="mt-4 ">
+                                    <div class="row mb-3">
+                                        <div class="mb-3 form-group"><label class="form-label">Họ tên<span
+                                                    class="text-danger">(*)</span>
+                                                <p id="loi_hovaten" style="color: red;"> </p>
+                                            </label><input type="text" class="form-control  " id="ip_hovaten"
+                                                required="" name="name" id="name" value="" onblur="kt_HoTen()"
+                                                placeholder="Họ Tên "></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="mb-3 form-group"><label class="form-label">Email<span
+                                                    class="text-danger">(*)</span></label>
+                                            <p id="loi_email" style="color: red;"></p>
+                                            <input type="email" class="form-control  " name="email" id="ip_email"
+                                                value="" onblur="kt_email()" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="mb-3 form-group">
+                                            <label class="form-label" for="sdt">Điện thoại<span
+                                                    class="text-danger">(*)</span></label>
+                                            <p id="loi_sdt" style="color: red;"></p>
+                                            <input type="text" class="form-control" id="sdt"
+                                                placeholder="(xxx) xxx-xxxx" value="" onblur="kt_sdt()">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="mb-3 form-group">
+                                            <label class="form-label" for="dia_chi">Địa chỉ <span
+                                                    class="text-danger">(*)</span></label>
+                                            <p id="loi_dia_chi" style="color: red;"></p>
+                                            <input type="text" class="form-control" id="dia_chi" onblur="kt_DiaChi()"
+                                                value="">
+                                        </div>
+                                        <div class="row">
+                                            <div class="mb-3 form-group"><label class="form-label">Số CMND/CCCD<span
+                                                        class="text-danger">(*)</span></label>
+                                                <p id="loi_CCCD" style="color: red;"></p><input type="text"
+                                                    class="form-control  " id="ip_CCCD" required="" name="phone"
+                                                    id="phone" onblur="kt_CCCD()" value="">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-3 form-group"><label class="form-label">Ghi chú thêm
+                                                    </label><textarea class="form-control  " rows="4" cols="5"
+                                                        placeholder="Quý khách có ghi chú lưu ý gì, hãy nói với chúng tôi ! "
+                                                        name="content" id="ghi_chu"></textarea></div>
+                                            </div>
+                                        </div>
+                                        <div class="text-center  "><button type="submit" class="btn btn-primary btn-hv "
+                                                id="btn_dat_tour">Đặt
+                                                tour </button></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 col-12">
+                        <!--Thanh toán  -->
+                        <div class="row m-3 shadow-lg rounded_boder">
+                            <div class=' title_booking '>
+                                <h4 class="ps-4 pt-2">Phương thức thanh toán </h4>
+                            </div>
+                            <div class="p-3" style="min-height: 181px;">
+
+                                <div class="col 12" id="TT_radio">
+                                    <input type="radio" name="Thanh_toan" id="tt1" value="Tiền mặt"
+                                        onchange="HienRadio('Thanh_toan1')">
+                                    <label for="tt1">Tiền mặt</label><br>
+                                    <div id="Thanh_toan1" style="display: none;">
+                                        <p> Thanh toán tại
+                                            <i class="bi bi-geo-alt-fill"></i>
+                                            <span> Số 12 Nguyễn Văn Bảo, Phường 4,
+                                                Quận Gò Vấp, Thành phố Hồ Chí Minh</span>
+                                        </p>
+                                    </div>
+                                    <input type="radio" name="Thanh_toan" id="tt2" value="Chuyển khoản"
+                                        onchange="HienRadio('Thanh_toan2')">
+                                    <label for="tt2">Chuyển khoản</label><br>
+                                    <div id="Thanh_toan2" style="display: none;">
+                                        <p>
+                                            Tên Tài Khoản : TNHH Du lịch Việt <br>
+                                            Số Tài khoản : 111 111 111<br>
+                                            Ngân hàng : Vietinbank - Chi nhánh 7
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12 mb-3">
+                                        <label for="price182" class="">Tổng tiền </label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" style="width: 115px;" id="tong_gia"></span>
+                                            <span class="input-group-text"><strong>VNĐ</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-12">
+                        <!--Thông tin hành khách -->
+                        <div id="TT_khach_hang">
+                            <div class="shadow-lg rounded_boder m-3" id="kh1" name="tt_kh">
+                                <div class=' title_booking '>
+                                    <h4 class="ps-4 pt-2">Thông tin hành khách 1</h4>
+                                </div>
+                                <div class="p-3">
+                                    <div class="row">
+                                        <label class="pb-1 form-label col-4 ">Họ và tên </label>
+                                        <p class="col-7">
+                                            <input type="text" id="ip_ht_kh1" class="form-control"
+                                                placeholder="Nhập họ tên" style="width: 100%;" name="ht_kh">
+                                        </p>
+                                    </div>
+                                    <div class="row">
+                                        <label class="pb-1 form-label col-4 ">Giới tính </label>
+                                        <p class="col-7">
+                                            <select required class="form-control title form-select "
+                                                style="width: 100%;" name="gender" id="ip_gioi_kh1" name="gioi_kh">
+                                                <option value="Nam" class="form ">Nam</option>
+                                                <option value="Nữ">Nữ</option>
+                                            </select>
+                                        </p>
+                                    </div>
+                                    <div class="row">
+                                        <label class="pb-1 form-label col-4 ">Ngày sinh</label>
+                                        <p class="col-7">
+                                            <input type="date" class="form-control" id="ip_sinh_kh1" name="sinh_kh" style="width: 100%;">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- lưu ý -->
+                <div class="row ">
+                    <div class="p-3 px-4">
+                        <div class="shadow-lg rounded_boder">
+                            <div class=' title_booking '>
+                                <h4 class="ps-4 pt-2">Lưu ý</h4>
+                            </div>
+                            <div class="p-3">
+                                <p><span><span style="line-height:1.8;">* Xin vui lòng nhập tên hành khách
+                                            phải đúng
+                                            tên như trong CMTND/Hộ chiếu .<br />
+                                            * Quý khách vui lòng mang đầy đủ giấy tờ tùy thân.<br />
+                                            * Hãy để lại thông tin chính xác để nhân viên của chúng tôi liên
+                                            hệ lại
+                                            cho bạn trong thời gian sớm nhất<br />
+                                            * Booking có giá trị khi được nhân viên xác nhận !</span></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Body-->
+                <div class="modal fade" id="modalId">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalTitleId">
+                                    Xác nhận thông tin đặt tour
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <form action="">
+                                        <div class="mb-3">
+                                            <div class="container">
+                                                <form>
+                                                    <div class="mb-3 row">
+                                                        <p for="inputName" class="col-4 col-form-label">Tên Tour</p>
+                                                        <div class="col-8">
+                                                            <p class="form-control" id="check_tour"></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3 row">
+                                                        <p for="inputName" class="col-4 col-form-label">Địa điểm</p>
+                                                        <div class="col-8">
+                                                            <p class="form-control" id="check_title"></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3 row">
+                                                        <p for="inputName" class="col-4 col-form-label">Ngày khởi hành
+                                                        </p>
+                                                        <div class="col-8">
+                                                            <p class="form-control" id="check_nkh"></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3 row">
+                                                        <p for="inputName" class="col-4 col-form-label">Họ Tên </p>
+                                                        <div class="col-8">
+                                                            <p class="form-control" id="check_ht"></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3 row">
+                                                        <label for="inputName" class="col-4 col-form-label">CCCD</label>
+                                                        <div class="col-8">
+                                                            <p class="form-control" id="check_CCCD"></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3 row">
+                                                        <label for="inputName" class="col-4 col-form-label">SDT</label>
+                                                        <div class="col-8">
+                                                            <p class="form-control" id="check_sdt"></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3 row">
+                                                        <label for="inputName" class="col-4 col-form-label">Tổng số
+                                                            lượng </label>
+                                                        <div class="col-8">
+                                                            <p class="form-control" id="check_sl"></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3 row">
+                                                        <label for="inputName" class="col-4 col-form-label">Phương thức
+                                                            thanh toán </label>
+                                                        <div class="col-8">
+                                                            <p class="form-control" id="check_tt"></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3 row">
+                                                        <label for="inputName" class="col-4 col-form-label">Tổng tiền
+                                                        </label>
+                                                        <div class="col-8">
+                                                            <p class="form-control" id="check_tongtien"></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3 row">
+                                                        <label for="inputName" class="col-4 col-form-label">Ghi chú thêm
+                                                        </label>
+                                                        <div class="col-8">
+                                                            <p class="form-control" id="check_ghichu"></p>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    Hủy
+                                </button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                                    onclick="capnhat()"> Đặt tour</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </main>
+    <!-- ========================== FOOTER ========================== -->
+    <footer id="wrapper_footer">
+        <div class="container pt-3">
+            <div class="row">
+                <div class="col-12 col-md-6 p-2 col-lg-4">
+                    <p class="fs-4 text-uppercase fw-bold text-center">Hỗ trợ tư vấn</p>
+                    <p>
+                        <span class="fw-bold">
+                            <i class="bi bi-envelope-at-fill text-danger"></i> MAIL:
+                        </span>
+                        <a href="mailto:dungcobamdo@gmail.com">dungcobamdo@gmail.com</a>
+                    </p>
+
+                    <p>
+                        <span class="fw-bold">
+                            <i class="bi bi-telephone-fill text-primary"></i>TEL:
+                        </span>
+                        <a href="tel:+0686.868.686">0686.868.686</a>
+                    </p>
+
+                    <div class="gr_contact fs-4">
+                        <a class="mx-1 text-primary" href="#"><i class="bi bi-messenger"></i></a>
+                        <a class="mx-1 text-success" href="#"><i class="bi bi-whatsapp"></i></a>
+                        <a class="mx-1 text-danger" href="#"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 p-2 col-lg-4">
+                    <p class="fs-4 text-uppercase fw-bold text-center">Thông tin cần biết</p>
+                    <p><a href="#">Điều kiện, điều khoản</a></p>
+                    <p><a href="#">Phương thức thanh toán</a></p>
+                    <p><a href="#">Chính sách bảo mật</a></p>
+                    <p><a href="#">Quy định</a></p>
+                </div>
+
+                <div class="col-12 p-2 col-lg-4">
+                    <p class="fs-4 text-uppercase fw-bold text-center">Thông tin liên hệ</p>
+                    <h5 class="fs-5 text-center">Trường Đại học Công Nghiệp</h5>
+                    <p>
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span class="fw-bold text-uppercase">Địa chỉ:</span>
+                        <span>12 Nguyễn Văn Bảo, P.4, Q.Gò Vấp, TP.HCM</span>
+                    </p>
+                    <iframe class="w-100" height="300"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.858169091082!2d106.68427047570351!3d10.82216415834704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174deb3ef536f31%3A0x8b7bb8b7c956157b!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2hp4buHcCBUUC5IQ00!5e0!3m2!1svi!2s!4v1710929565391!5m2!1svi!2s"
+                        style="border: 0" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="row text-center pt-3 user-select-none">
+                <p>©Copyright Thiết kế bởi Nhóm 10 :D</p>
+            </div>
+        </div>
+    </footer>
+    <!-- ========================== FOOTER ========================== -->
+    </div>
+    <!-- ========================== JAVASCRIPT ========================== -->
+    <script src="../assets/js/jquery-3.7.1.js"></script>
+    <script src="../assets/js/bootstrap.bundle.js"></script>
+    <script src="../assets/js/dattour.js"></script>
+    <script src="../assets/js/KiemTraTK.js"></script>
+    <!-- ========================== JAVASCRIPT ========================== -->
+</body>
+
+</html>

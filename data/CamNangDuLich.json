@@ -1,0 +1,28 @@
+{
+  "blogs": [
+    {
+      "img": "https://www.vietnambooking.com/wp-content/uploads/2024/03/vuon-quoc-gia-taman-negara-1.jpg",
+      "href": "./html/ChiTietBlog.html?slug=kham-pha-taman-negara-vuon-quoc-gia-lau-doi-nhat",
+      "title": "Khám phá Taman Negara – vườn quốc gia lâu đời nhất",
+      "content": "Vườn quốc gia Taman Negara là điểm đến lý tưởng cho những ai đam mê thám hiểm và khám phá vẻ đẹp hoang dã và kỳ diệu của thiên nhiên. Nếu bạn đang có ý định du lịch khám phá tại địa điểm này thì hãy xem hết bài viết này nhé."
+    },
+    {
+      "img": "https://www.vietnambooking.com/wp-content/uploads/2024/03/cao-nguyen-cameron-1.jpg",
+      "href": "./html/ChiTietBlog.html?slug=cao-nguyen-cameron-dia-diem-du-lich-tho-mong-o-malaysia",
+      "title": "Cao nguyên Cameron – địa điểm du lịch thơ mộng ở Malaysia",
+      "content": "Nếu bạn đang muốn tránh xa khỏi ồn ào của thành phố náo nhiệt thì cao nguyên Cameron là một nơi lý tưởng..."
+    },
+    {
+      "img": "https://www.vietnambooking.com/wp-content/uploads/2024/03/tuong-dai-doc-lap-phnom-penh-1.jpg",
+      "href": "./html/ChiTietBlog.html?slug=kham-pha-tuong-dai-doc-lap-phnom-penh",
+      "title": "Khám phá tượng đài Độc lập Phnôm Pênh",
+      "content": "Tượng đài Độc lập là một trong những điểm check-in thường xuất hiện trong những tour du lịch Campuchia..."
+    },
+    {
+      "img": "https://www.vietnambooking.com/wp-content/uploads/2024/03/cao-nguyen-cameron-1.jpg",
+      "href": "./html/ChiTietBlog.html?slug=cao-nguyen-cameron-dia-diem-du-lich-tho-mong-o-malaysia",
+      "title": "Cao nguyên Cameron – địa điểm du lịch thơ mộng ở Malaysia",
+      "content": "Nếu bạn đang muốn tránh xa khỏi ồn ào của thành phố náo nhiệt thì cao nguyên Cameron là một nơi lý tưởng..."
+    }
+  ]
+}

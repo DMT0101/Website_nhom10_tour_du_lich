@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour nước ngoài - Du lịch Việt</title>
+    <!-- ----------------- Favicon ----------------- -->
+    <link rel="shortcut icon" href="../assets/img/icon/favicon.png" type="image/x-icon">
+    <!-- ----------------- Bootstrap 5 ----------------- -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <!-- ----------------- Bootstrap Icon ----------------- -->
+    <link rel="stylesheet" href="../assets/icon/bootstrap-icons.css">
+    <!-- ----------------- Fonts ----------------- -->
+    <link rel="stylesheet" href="../assets/font/stylesheet.css">
+    <!-- ----------------- Style ----------------- -->
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/ChiTietTour.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- ========================== HEADER ========================== -->
+        <header id="wrapper_header">
+            <div class="position-relative">
+                <!-- ---------------------- NAVBAR ---------------------- -->
+                <nav class="navbar navbar-expand-lg bg-dark">
+                    <div class="container-lg container-fluid">
+                        <a class="navbar-brand font_DPTBlacksword mx-lg-3 mx-0 text-white fs-4 p-0" href="/">Du lịch
+                            Việt</a>
+                        <div id="navmenu" class="collapse navbar-collapse justify-content-around">
+                            <ul class="navbar-nav text-uppercase fw-bold">
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link" href="/">Trang chủ</a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link" href="./GioiThieu.html">Giới thiệu</a>
+                                </li>
+                                <li class="nav-item mx-2 dropdown">
+                                    <a class="nav-link dropdown-toggle" role="button" data-bs-auto-close="outside"
+                                        data-bs-toggle="dropdown" href="/">Tour</a>
+                                    <ul class="dropdown-menu text-capitalize">
+                                        <li class="dropend">
+                                            <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                                href="/">Trong nước</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="./TourTrongNuoc.html?type=MienBac">Miền Bắc</a></li>
+                                                <li><a class="dropdown-item" href="./TourTrongNuoc.html?type=MienTrung">Miền Trung</a></li>
+                                                <li><a class="dropdown-item" href="./TourTrongNuoc.html?type=MienNam">Miền Nam</a></li>
+                                            </ul>
+
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="./TourNuocNgoai.html">Quốc tế</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link" href="./Blog.html">Blog</a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link" href="./LienHe.html">Liên hệ</a>
+                                </li>
+                            </ul>
+                            <a id="btn_dangnhap" class="btn btn-info text-white fw-bold my-4 my-lg-0"
+                                href="./DangNhap.html">Đăng nhập</a>
+                            <a id="user_name" class="text-white" href="./TaiKhoan.html"></a>
+                        </div>
+                        <button class="navbar-toggler bg-info" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navmenu">
+                            <label class="hamburger">
+                                <input type="checkbox" />
+                                <svg viewBox="0 0 32 32">
+                                    <path class="line line-top-bottom"
+                                        d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                                    </path>
+                                    <path class="line" d="M7 16 27 16"></path>
+                                </svg>
+                            </label>
+                        </button>
+                    </div>
+                </nav>
+                <!-- ---------------------- NAVBAR ---------------------- -->
+            </div>
+        </header>
+        <!-- ========================== HEADER ========================== -->
+        <!-- ===================== CONTENT ===================== -->
+        <main class="content">
+            <div class="container ">
+                <div class="row header-content">
+
+                </div>
+                <div class="row images-content">
+                </div>
+                <div class="thongtin ms-2">
+                    <div class="row m-5 thongtin1">
+
+                    </div>
+                    <div class="row m-5 thongtin2">
+
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <h3 class="text-center m-4">Lịch trình</h3>
+                    <div class="col-12 col-md-3 mb-4">
+                        <div class="sticky_list shadow-none">
+                        </div>
+                    </div>
+                    <div class="lichtrinh col-12 col-md-9">
+
+                    </div>
+                    <hr>
+                </div>
+                <div class="row mt-4 ms-4 chitiet1">
+
+                </div>
+                <div class="row mt-4 ms-4 chitiet2">
+                </div>
+                <div class="row mt-4 luuy shadow-lg">
+
+                </div>
+                <!-- Comment -->
+                <div class="tour-comment mt-4">
+                    <h4>Bình luận</h4>
+
+                    <!-- Comment list -->
+                    <div class="comment-list mt-4 ">
+                        <h5>Danh sách bình luận</h5>
+                    </div>
+
+                    <!-- Comment form -->
+                    <div class="comment-form mt-3 ">
+                        <h5>Gửi bình luận</h5>
+                        <form id="form-comment">
+                            <label for="comment-name" class="form-label">Tên của bạn</label>
+                            <input id="comment-name" type="text" class="form-control mb-3"
+                                placeholder="Nhập tên của bạn" />
+
+                            <span id="name-error" class="text-danger"></span>
+
+                            <label for="comment-email" class="form-label">
+                                Email của bạn
+                            </label>
+
+                            <input id="comment-email" type="email" class="form-control mb-3"
+                                placeholder="Nhập email của bạn" />
+
+                            <span id="email-error" class="text-danger"></span>
+
+                            <label for="comment-content" class="form-label">
+                                Nội dung bình luận
+                            </label>
+
+                            <textarea class="form-control mb-3" id="comment-content" rows="3"
+                                placeholder="Nhập nội dung bình luận"></textarea>
+
+                            <span id="content-error" class="text-danger"></span>
+
+                            <button type="submit" class="btn btn-primary mt-2">
+                                Gửi bình luận
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+        </main>
+        <!-- ========================== FOOTER ========================== -->
+        <footer id="wrapper_footer">
+            <section class="content_newTour">
+                <div class="container px-lg-5 py-5">
+                    <h3 class="font_DPTBlacksword text-info text-center pb-4">Top Tour phổ biến</h3>
+                    <div id="carousel_card_1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="cards-wrapper">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="../img/tl1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Thái Lan: Phuket - Đảo Phi Phi & Vịnh
+                                                Phang Nga | Lễ 30/4</h5>
+                                            <div class="card-text">
+                                                <p>
+                                                    <i class="bi bi-clock"></i>
+                                                    <span>4N3D</span>
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-calendar"></i>
+                                                    <span>12/04/2024</span>
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-geo-alt-fill"></i>
+                                                    <span>Thái Lan: Phuket - Đảo Phi Phi & Vịnh Phang Nga</span>
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-cash"></i>
+                                                    <span>10000000 đ</span>
+                                                </p>
+                                            </div>
+                                            <a href="./ChiTietTour.html?id=5" class="btn btn-info text-white">Xem
+                                                chi tiết</a>
+                                        </div>
+                                    </div>
+                                    <div class="card d-none d-md-block" style="width: 18rem;">
+                                        <img src="../img/phocohoian.webp" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Đà Nẵng - Bà Nà - Huế - Hội An - Tour du
+                                                lịch 4 ngày 3 đêm</h5>
+                                            <div class="card-text">
+                                                <p>
+                                                    <i class="bi bi-clock"></i>
+                                                    <span>4N3D</span>
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-calendar"></i>
+                                                    <span>12/04/2024</span>
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-geo-alt-fill"></i>
+                                                    <span>TPHCM - Đà Nẵng - Bà Nà - Huế - Hội An</span>
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-cash"></i>
+                                                    <span>10000000 đ</span>
+                                                </p>
+                                            </div>
+                                            <a href="./ChiTietTour.html?id=1" class="btn btn-info text-white">Xem
+                                                chi tiết</a>
+                                        </div>
+                                    </div>
+                                    <div class="card d-none d-md-block" style="width: 18rem;">
+                                        <img src="../img/Vinh-Ha-Long.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Hà Nội - Hạ Long - Yên Tử - Ninh Bình -
+                                                Bái Đính - Tràng An (Khách sạn 4 sao)</h5>
+                                            <div class="card-text">
+                                                <p>
+                                                    <i class="bi bi-clock"></i>
+                                                    <span>4N3D</span>
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-calendar"></i>
+                                                    <span>12/04/2024</span>
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-geo-alt-fill"></i>
+                                                    <span>TPHCM - Hà Nội - Hạ Long - Yên Tử - Ninh Bình - Bái Đính -
+                                                        Tràng An</span>
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-cash"></i>
+                                                    <span>10000000 đ</span>
+                                                </p>
+                                            </div>
+                                            <a href="./ChiTietTour.html?id=3" class="btn btn-info text-white">Xem
+                                                chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="cards-wrapper">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="../img/venice.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Phú Quốc - Thiên đường giải trí
+                                                VinWonders - Vinpearl Safari - Tour du
+                                                lịch 4 ngày 3 đêm</h5>
+                                            <div class="card-text">
+                                                <p>
+                                                    <i class="bi bi-clock"></i>
+                                                    <span>4N3D</span>
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-calendar"></i>
+                                                    <span>12/04/2024</span>
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-geo-alt-fill"></i>
+                                                    <span>TPHCM - Phú Quốc - Vinpearl Safari</span>
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-cash"></i>
+                                                    <span>10000000 đ</span>
+                                                </p>
+                                            </div>
+                                            <a href="./ChiTietTour.html?id=4" class="btn btn-info text-white">Xem
+                                                chi tiết</a>
+                                        </div>
+                                    </div>
+                                    <div class="card d-none d-md-block" style="width: 18rem;">
+                                        <img src="../img/br1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Du lịch Brunei Hè - Darussalam - Tour du
+                                                lịch 4 ngày 3 đêm</h5>
+                                            <div class="card-text">
+                                                <p>
+                                                    <i class="bi bi-clock"></i>
+                                                    <span>4N3D</span>
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-calendar"></i>
+                                                    <span>12/04/2024</span>
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-geo-alt-fill"></i>
+                                                    <span>Brunei - BANDAR SERI BEGAWAN</span>
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-cash"></i>
+                                                    <span>10000000 đ</span>
+                                                </p>
+                                            </div>
+                                            <a href="./ChiTietTour.html?id=6" class="btn btn-info text-white">Xem
+                                                chi tiết</a>
+                                        </div>
+                                    </div>
+                                    <div class="card d-none d-md-block" style="width: 18rem;">
+                                        <img src="../img/hk1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Du lịch Hồng Kông - Thiền Viện Chí Liên -
+                                                Tour du
+                                                lịch 4 ngày 3 đêm</h5>
+                                            <div class="card-text">
+                                                <p>
+                                                    <i class="bi bi-clock"></i>
+                                                    <span>4N3D</span>
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-calendar"></i>
+                                                    <span>12/04/2024</span>
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-geo-alt-fill"></i>
+                                                    <span>HONGKONG – MIẾU HUỲNH ĐẠI TIÊN - Disneyland Hong Kong</span>
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-cash"></i>
+                                                    <span>10000000 đ</span>
+                                                </p>
+                                            </div>
+                                            <a href="./ChiTietTour.html?id=7" class="btn btn-info text-white">Xem
+                                                chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="cards-wrapper">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="../img/phocohoian.webp" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Đà Nẵng - Bà Nà - Huế - Hội An - Tour du
+                                                lịch 4 ngày 3 đêm</h5>
+                                            <div class="card-text">
+                                                <p>
+                                                    <i class="bi bi-clock"></i>
+                                                    <span>4N3D</span>
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-calendar"></i>
+                                                    <span>12/04/2024</span>
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-geo-alt-fill"></i>
+                                                    <span>Thái Lan: Phuket - Đảo Phi Phi & Vịnh Phang Nga</span>
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-cash"></i>
+                                                    <span>10000000 đ</span>
+                                                </p>
+                                            </div>
+                                            <a href="./ChiTietTour.html?id=5" class="btn btn-info text-white">Xem
+                                                chi tiết</a>
+                                        </div>
+                                    </div>
+                                    <div class="card d-none d-md-block" style="width: 18rem;">
+                                        <img src="../img/phocohoian.webp" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Đà Nẵng - Bà Nà - Huế - Hội An - Tour du
+                                                lịch 4 ngày 3 đêm</h5>
+                                            <div class="card-text">
+                                                <p>
+                                                    <i class="bi bi-clock"></i>
+                                                    <span>4N3D</span>
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-calendar"></i>
+                                                    <span>12/04/2024</span>
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-geo-alt-fill"></i>
+                                                    <span>Thái Lan: Phuket - Đảo Phi Phi & Vịnh Phang Nga</span>
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-cash"></i>
+                                                    <span>10000000 đ</span>
+                                                </p>
+                                            </div>
+                                            <a href="./ChiTietTour.html?id=5" class="btn btn-info text-white">Xem
+                                                chi tiết</a>
+                                        </div>
+                                    </div>
+                                    <div class="card d-none d-md-block" style="width: 18rem;">
+                                        <img src="../img/phocohoian.webp" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Đà Nẵng - Bà Nà - Huế - Hội An - Tour du
+                                                lịch 4 ngày 3 đêm</h5>
+                                            <div class="card-text">
+                                                <p>
+                                                    <i class="bi bi-clock"></i>
+                                                    <span>4N3D</span>
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-calendar"></i>
+                                                    <span>12/04/2024</span>
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-geo-alt-fill"></i>
+                                                    <span>Thái Lan: Phuket - Đảo Phi Phi & Vịnh Phang Nga</span>
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-cash"></i>
+                                                    <span>10000000 đ</span>
+                                                </p>
+                                            </div>
+                                            <a href="./ChiTietTour.html?id=5" class="btn btn-info text-white">Xem
+                                                chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel_card_1"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel_card_1"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <div class="container pt-3">
+                <div class="row">
+                    <div class="col-12 col-md-6 p-2 col-lg-4">
+                        <p class="fs-4 text-uppercase fw-bold text-center">Hỗ trợ tư vấn</p>
+                        <p>
+                            <span class="fw-bold">
+                                <i class="bi bi-envelope-at-fill text-danger"></i> MAIL:
+                            </span>
+                            <a href="mailto:dungcobamdo@gmail.com">dungcobamdo@gmail.com</a>
+                        </p>
+
+                        <p>
+                            <span class="fw-bold">
+                                <i class="bi bi-telephone-fill text-primary"></i>TEL:
+                            </span>
+                            <a href="tel:+0686.868.686">0686.868.686</a>
+                        </p>
+
+                        <div class="gr_contact fs-4">
+                            <a class="mx-1 text-primary" href="#"><i class="bi bi-messenger"></i></a>
+                            <a class="mx-1 text-success" href="#"><i class="bi bi-whatsapp"></i></a>
+                            <a class="mx-1 text-danger" href="#"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 p-2 col-lg-4">
+                        <p class="fs-4 text-uppercase fw-bold text-center">Thông tin cần biết</p>
+                        <p><a href="#">Điều kiện, điều khoản</a></p>
+                        <p><a href="#">Phương thức thanh toán</a></p>
+                        <p><a href="#">Chính sách bảo mật</a></p>
+                        <p><a href="#">Quy định</a></p>
+                    </div>
+
+                    <div class="col-12 p-2 col-lg-4">
+                        <p class="fs-4 text-uppercase fw-bold text-center">Thông tin liên hệ</p>
+                        <h5 class="fs-5 text-center">Trường Đại học Công Nghiệp</h5>
+                        <p>
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span class="fw-bold text-uppercase">Địa chỉ:</span>
+                            <span>12 Nguyễn Văn Bảo, P.4, Q.Gò Vấp, TP.HCM</span>
+                        </p>
+                        <iframe class="w-100" height="300"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.858169091082!2d106.68427047570351!3d10.82216415834704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174deb3ef536f31%3A0x8b7bb8b7c956157b!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2hp4buHcCBUUC5IQ00!5e0!3m2!1svi!2s!4v1710929565391!5m2!1svi!2s"
+                            style="border: 0" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="row text-center pt-3 user-select-none">
+                    <p>©Copyright Thiết kế bởi Nhóm 10 :D</p>
+                </div>
+            </div>
+
+
+
+
+
+    </footer>
+    <!-- ========================== FOOTER ========================== -->
+    </div>
+    <!-- ========================== JAVASCRIPT ========================== -->
+    <script src="../assets/js/jquery-3.7.1.js"></script>
+    <script src="../assets/js/bootstrap.bundle.js"></script>
+    <script src="../assets/js/ChiTietTour.js"></script>
+    <script src="../assets/js/KiemTraTK.js"></script>
+    <!-- ========================== JAVASCRIPT ========================== -->
+</body>
+
+</html>
